@@ -20,6 +20,9 @@ ro.hwui.text_small_cache_height=1024
 ro.hwui.text_large_cache_width=2048
 ro.hwui.text_large_cache_height=2048
 
+# Logs
+persist.log.tag.ACDB-LOADER=S
+
 # QTI Mem Optimisation
 persist.vendor.sys.memplus.enable=false
 ro.vendor.qti.sys.fw.bg_apps_limit=30
