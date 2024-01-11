@@ -74,8 +74,13 @@ DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE += \
 DEVICE_MANIFEST_FILE += \
     $(DEVICE_PATH)/configs/hidl/manifest.xml
 
+
 DEVICE_MATRIX_FILE += \
     $(DEVICE_PATH)/configs/hidl/compatibility_matrix.xml
+
+# HWUI
+HWUI_COMPILE_FOR_PERF := true
+TARGET_USES_VULKAN = true
 
 ODM_MANIFEST_SKUS += \
     sn100
