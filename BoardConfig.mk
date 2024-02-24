@@ -26,6 +26,7 @@ AB_OTA_PARTITIONS := \
     vbmeta_system \
     vendor \
     vendor_boot
+TARGET_DISABLE_POSTRENDER_CLEANUP := true
 
 # Architecture
 TARGET_ARCH := arm64
