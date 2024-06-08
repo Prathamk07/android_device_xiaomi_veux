@@ -58,7 +58,7 @@ TARGET_CAMERA_OVERRIDE_FORMAT_FROM_RESERVED := true
 TARGET_SCREEN_DENSITY := 440
 
 # Filesystem
-TARGET_FS_CONFIG_GEN := $(DEVICE_PATH)/config.fs
+TARGET_FS_CONFIG_GEN := $(DEVICE_PATH)/configs/config.fs
 
 # GNSS
 BOARD_VENDOR_QCOM_GPS_LOC_API_HARDWARE := default
@@ -67,20 +67,19 @@ LOC_HIDL_VERSION := 4.0
 # HIDL
 DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE := \
     hardware/qcom-caf/common/vendor_framework_compatibility_matrix.xml \
-    hardware/xiaomi/vintf/xiaomi_framework_compatibility_matrix.xml \
-    $(DEVICE_PATH)/device_framework_matrix.xml
+    $(DEVICE_PATH)/configs/hidl/device_framework_matrix.xml
 
 DEVICE_MANIFEST_FILE := \
-    $(DEVICE_PATH)/manifest.xml
+    $(DEVICE_PATH)/configs/hidl/manifest.xml
 
 DEVICE_MATRIX_FILE := \
-    $(DEVICE_PATH)/compatibility_matrix.xml
+    $(DEVICE_PATH)/configs/hidl/compatibility_matrix.xml
 
 ODM_MANIFEST_SKUS += \
     sn100
 
 ODM_MANIFEST_SN100_FILES := \
-    $(DEVICE_PATH)/manifest_ese.xml
+    $(DEVICE_PATH)/configs/hidl/manifest_ese.xml
 
 # Kernel
 BOARD_KERNEL_BASE := 0x00000000
