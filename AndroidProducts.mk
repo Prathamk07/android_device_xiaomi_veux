@@ -8,6 +8,6 @@ PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/blaze_veux.mk
 
 COMMON_LUNCH_CHOICES := \
-    blaze-user \
+    blaze_user \
     blaze_veux-userdebug \
     blaze_veux-eng
