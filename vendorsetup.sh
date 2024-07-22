@@ -9,7 +9,7 @@ rm -rf hardware/dolby
 rm -rf vendor/xiaomi/AGC-Camera
 
 git clone --depth=1 https://github.com/Prathamk07/vendor_xiaomi_veux.git vendor/xiaomi/veux
-git clone https://github.com/Prathamk07/kernel_xiaomi_sm6375.git kernel/xiaomi/sm6375
+git clone https://github.com/dereference23/kernel_xiaomi_sm6375.git kernel/xiaomi/sm6375
 git clone --depth=1 https://github.com/Prathamk07/device_xiaomi_veux-kernel.git device/xiaomi/veux-kernel
 git clone --depth=1 https://github.com/Positron-B/vendor_xiaomi_miuicamera-veux.git vendor/xiaomi/miuicamera-veux
 git clone --depth=1 https://github.com/Positron-B/vendor_xiaomi_miuicamera.git vendor/xiaomi/miuicamera
