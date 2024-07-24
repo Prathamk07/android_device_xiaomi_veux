@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/pixelstar_veux.mk
+    $(LOCAL_DIR)/blaze_veux.mk
 
 COMMON_LUNCH_CHOICES := \
-    pixelstar_veux-user \
-    pixelstar_veux-userdebug \
-    pixelstar_veux-eng
+    blaze_veux-user \
+    blaze_veux-userdebug \
+    blaze_veux-eng
