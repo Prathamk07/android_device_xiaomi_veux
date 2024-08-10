@@ -311,7 +311,6 @@ PRODUCT_PACKAGES += \
     TelephonyOverlayCOMMON
 
 PRODUCT_PACKAGES += \
-    FrameworkBoostOverlay \
     FrameworkOverlayVEUX \
     SettingsOverlayVEUX \
     SystemUIOverlayVEUX \
@@ -398,27 +397,6 @@ PRODUCT_PACKAGES += \
     libjsoncpp.vendor \
     libqti_vndfwk_detect.vendor \
     libvndfwk_detect_jni.qti.vendor
-
-# QTI Framework boost
-ifeq ($(TARGET_SUPPORTS_FRAMEWORK_BOOST),true)
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/frameworkboost/proprietary/system/etc/permissions/com.qualcomm.qti.Performance.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/com.qualcomm.qti.Performance.xml \
-    $(LOCAL_PATH)/frameworkboost/proprietary/system/etc/permissions/com.qualcomm.qti.UxPerformance.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/com.qualcomm.qti.UxPerformance.xml
-
-PRODUCT_PACKAGES += \
-    libtflite \
-    FrameworkBoostOverlay \
-    PerformanceMode \
-    PowerSaveMode \
-    QPerformance \
-    QXPerformance \
-    UxPerformance \
-    workloadclassifier
-
-PRODUCT_BOOT_JARS += \
-    QPerformance \
-    UxPerformance
-endif
 
 # RIL
 PRODUCT_PACKAGES += \
