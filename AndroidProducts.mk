@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/blaze_veux.mk
+    $(LOCAL_DIR)/lineage_veux.mk
 
 COMMON_LUNCH_CHOICES := \
-    blaze_veux-user \
-    blaze_veux-userdebug \
-    blaze_veux-eng
+    lineage_veux-user \
+    lineage_veux-userdebug \
+    lineage_veux-eng
