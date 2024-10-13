@@ -148,7 +148,6 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PACKAGES += \
     android.hardware.drm@1.3.vendor \
-    libcrypto_shim
 
 # Fastbootd
 PRODUCT_PACKAGES += \
@@ -474,7 +473,8 @@ PRODUCT_BOOT_JARS += \
 
 # Thermal
 PRODUCT_PACKAGES += \
-    android.hardware.thermal-service.qti
+    android.hardware.thermal@2.0-service.qti
+
 
 # Update engine
 PRODUCT_PACKAGES += \

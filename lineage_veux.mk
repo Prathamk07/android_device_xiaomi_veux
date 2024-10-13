@@ -14,6 +14,10 @@ $(call inherit-product, $(LOCAL_PATH)/device.mk)
 # Inherit some common Lineage stuff.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
+TARGET_FACE_UNLOCK_SUPPORTED := true
+TARGET_USES_AOSP_RECOVERY := true
+EVO_BUILD_TYPE := Official
+
 # Boot animation
 TARGET_SCREEN_HEIGHT := 2400
 TARGET_SCREEN_WIDTH := 1080
