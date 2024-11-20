@@ -53,7 +53,6 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PACKAGES += \
     audioadsprpcd \
-    liba2dpoffload \
     libbatterylistener \
     libcomprcapture \
     libexthwplugin \
@@ -116,9 +115,6 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/display_id_4630947081618265473.xml:$(TARGET_COPY_OUT_VENDOR)/etc/displayconfig/display_id_4630947081618265473.xml
-
-# Dolby
-$(call inherit-product, hardware/dolby/dolby.mk)
 
 # DRM
 PRODUCT_PACKAGES += \
@@ -199,7 +195,6 @@ PRODUCT_PACKAGES += \
     libOmxG711Enc \
     libOmxQcelp13Enc \
     libmm-omxcore \
-    libstagefrighthw
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/media/media_codecs_blair.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_blair.xml \
@@ -408,9 +403,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,$(LOCAL_PATH)/wifi,$(TARGET_COPY_OUT_VENDOR)/etc/wifi)
 
-# WiFi Display
-PRODUCT_BOOT_JARS += \
-    WfdCommon
 
 # WiFi firmware symlink
 PRODUCT_PACKAGES += \

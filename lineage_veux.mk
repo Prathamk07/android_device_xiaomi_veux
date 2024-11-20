@@ -17,6 +17,7 @@ $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 TARGET_FACE_UNLOCK_SUPPORTED := true
 TARGET_USES_AOSP_RECOVERY := true
 EVO_BUILD_TYPE := Official
+TARGET_DISABLE_EPPE := true
 
 # Boot animation
 TARGET_SCREEN_HEIGHT := 2400
